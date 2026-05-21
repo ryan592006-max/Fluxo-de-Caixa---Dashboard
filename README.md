@@ -1,8 +1,8 @@
 # 📊 Sistema de Gestão Financeira e Business Intelligence — CASER Luziânia
 
-[![Goiás Social](https://img.shields.io/badge/Status-Conclu%C3%ADdo-success)](https://github.com/seu-usuario)
-[![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://www.python.org/)
-[![Google Data](https://img.shields.io/badge/Power_BI-Data_Visualization-yellow)](https://datastudio.google.com/u/0/navigation/reporting)
+![Status](https://img.shields.io/badge/Status-Conclu%C3%ADdo-success)
+![Python](https://img.shields.io/badge/Python-3.x-blue.svg)
+![Looker Studio](https://img.shields.io/badge/Looker_Studio-Data_Visualization-blue)
 
 ## 📝 Visão Geral do Projeto
 Este projeto consiste no desenvolvimento e implementação de um **Sistema Integrado de Gestão Financeira e Business Intelligence** para o CASER - Luziânia (institucionalizado sob a identidade do Goiás Social). 
@@ -21,26 +21,18 @@ O projeto foi dividido em duas grandes frentes integradas:
 * **Filtros Inteligentes:** Implementação de segmentação por *Data, Tipo, Transação* e *Natureza* para consultas rápidas.
 * **Integridade de Dados (Botão ADD +):** Automação via script/macro para inserção de novos registros, o que preserva as fórmulas, formatação e impede a quebra da estrutura da tabela por erro humano.
 
-### 2. Painel de Business Intelligence (Dashboard Interativo)
-* **Indicadores de Desempenho (KPIs):** Visualização clara no topo da tela do total de Entradas, Saídas e Saldo Atual.
+### 2. Painel de Business Intelligence (Dashboard no Looker Studio)
+* **Indicadores de Desempenho (KPIs):** Visualização clara no topo do painel do total de Entradas, Saídas e Saldo Atual.
 * **Gráficos Comparativos:** Análise temporal de Entradas vs. Saídas e detalhamento volumétrico de gastos por *Natureza* (Higiene, Horta, Mobiliário, Utilitários, etc.).
 * **Tabela de Auditoria:** Inclusão de uma tabela detalhada na base do painel para conferência rápida de lançamentos específicos sem necessidade de abrir a base bruta.
-* **Interatividade Total:** Filtros dinâmicos de período e atualização cross-filtering (clicar em uma categoria no gráfico filtra todo o painel).
+* **Interatividade e Filtros:** Filtros dinâmicos de período e recursos de cross-filtering nativos do Looker Studio (clicar num elemento do gráfico filtra todo o painel).
 
 ---
 
 ## 🚀 Próximos Passos (Fase de Engenharia de Dados)
 Como parte da evolução do projeto dentro do cronograma de Engenharia de Dados, os próximos passos mapeados são:
-1.  **Pipeline de ETL com Python (Pandas):** Construir um script para extrair os dados diretamente da planilha, aplicar regras de limpeza (remover linhas vazias, tratar formatos de data e valores) e consolidar os históricos mensais.
-2.  **Modelagem em Banco de Dados:** Migrar a carga final do dado limpo para um banco de dados relacional (**PostgreSQL**).
-
----
-
-## 📂 Estrutura do Repositório
-
-* `/documentos`: Manuais de instrução completos do Dashboard e da Planilha Financeira.
-* `/imagens`: Prints do painel de BI e da estrutura da planilha de inputs.
-* `/scripts`: (Em desenvolvimento) Scripts Python de automação.
+1. **Pipeline de ETL com Python (Pandas):** Construir um script para extrair os dados diretamente da planilha, aplicar regras de limpeza (remover linhas vazias, tratar formatos de data e valores) e consolidar os históricos mensais.
+2. **Modelagem em Banco de Dados:** Migrar a carga final do dado limpo para um banco de dados relacional (**PostgreSQL**).
 
 ---
 
